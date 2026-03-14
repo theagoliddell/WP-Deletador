@@ -1,6 +1,6 @@
 # 🚀 WP Deletador
 
-**WP Deletador** is a lightweight and efficient WordPress plugin designed to help administrators perform bulk cleanup of old posts based on specific time and category criteria.
+**WP Deletador** is an extreme lightweight and efficient WordPress plugin designed to help administrators perform bulk cleanup of old posts based on specific time and category criteria.
 
 ---
 
