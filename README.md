@@ -1,50 +1,53 @@
 # 🚀 WP Deletador
 
-O **WP Deletador** é um plugin leve e eficiente para WordPress projetado para ajudar administradores a realizar a limpeza em massa de postagens antigas com base em critérios específicos de tempo e categoria.
+**WP Deletador** is a lightweight and efficient WordPress plugin designed to help administrators perform bulk cleanup of old posts based on specific time and category criteria.
 
 ---
 
-## 🛠️ O que o plugin faz?
+## 🛠️ Key Features
 
-O plugin adiciona um painel de controle em **Configurações → Apagar Postagens**, permitindo:
+The plugin adds a control panel under **Settings → Apagar Postagens**, allowing:
 
-* **Filtro por Período:** Apague posts mais antigos que "X" dias e "H" horas.
-* **Filtro por Data Fixa:** Apague tudo que foi publicado antes de uma data e hora específica.
-* **Seleção de Categoria:** Aplique a regra a todas as categorias ou a uma específica.
-* **Modo de Simulação:** Visualize quantas postagens seriam afetadas antes de executar a exclusão.
-* **Exclusão Definitiva:** Remove os posts permanentemente (pula a lixeira) para otimizar o banco de dados.
-
----
-
-## 📂 Estrutura do Projeto
-
-O código é organizado de forma modular para facilitar a manutenção:
-
-* `apagar-postagens-tempo.php`: Arquivo principal e hooks.
-* `includes/`: Lógica de cálculos (`apt-cutoff.php`), queries de banco (`apt-query.php`) e constantes.
-* `admin/`: Gerenciamento de menus, estilos CSS e lógica da página administrativa.
-* `admin/views/`: Templates HTML do formulário.
+* **Period Filter:** Delete posts older than "X" days and "H" hours.
+* **Fixed Date Filter:** Delete everything published before a specific date and time.
+* **Category Selection:** Apply rules to all categories or target a specific one.
+* **Simulation Mode:** Preview exactly how many posts will be affected before executing.
+* **Permanent Deletion:** Removes posts permanently (bypasses the trash) to optimize your database.
 
 ---
 
-## ⚙️ Instalação
+## 📂 Project Structure
 
-1.  Baixe o repositório ou compacte a pasta do plugin em um arquivo `.zip`.
-2.  No seu painel WordPress, vá em **Plugins > Adicionar Novo > Enviar Plugin**.
-3.  Selecione o arquivo e clique em **Instalar Agora**.
-4.  Ative o plugin **"Apagar Postagens por Tempo"**.
-5.  Acesse as configurações em **Configurações > Apagar Postagens**.
+The code is modularized for better maintenance and performance:
 
----
-
-## ⚠️ Segurança e Recomendações
-
-* **Permissões:** Apenas usuários com capacidade `manage_options` (administradores) podem acessar o painel.
-* **Proteção:** O formulário utiliza verificação de `nonce` para evitar ataques CSRF.
-* **Backup:** **Sempre realize um backup completo** do seu banco de dados antes de executar a exclusão, pois o processo é irreversível.
+* `apagar-postagens-tempo.php`: Main bootstrap file and hooks.
+* `includes/apt-constants.php`: Plugin constants (version, slug).
+* `includes/apt-cutoff.php`: Date/time calculation logic.
+* `includes/apt-query.php`: Query building, counting (preview), and deletion logic.
+* `admin/apt-menu.php`: Menu registration and CSS enqueuing.
+* `admin/apt-page.php`: Admin page logic (data sanitization and action handling).
+* `admin/views/apt-form.php`: HTML templates for the settings form.
 
 ---
 
-## 📝 Licença
+## ⚙️ Installation
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+1.  Download this repository or compress the plugin folder into a `.zip` file.
+2.  In your WordPress dashboard, go to **Plugins > Add New > Upload Plugin**.
+3.  Select the file and click **Install Now**.
+4.  Activate the **"Apagar Postagens por Tempo"** plugin.
+5.  Access the settings via **Settings > Apagar Postagens**.
+
+---
+
+## ⚠️ Security & Recommendations
+
+* **Permissions:** Only users with `manage_options` capability (Administrators) can access the panel.
+* **Protection:** The form uses `nonce` verification to prevent CSRF attacks.
+* **Backup:** **Always perform a full backup** of your database and files before executing the deletion, as the process is irreversible.
+
+---
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information or just put "Theago Liddell" in the credits :).
