@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Apagar Postagens por Tempo
+ * Plugin Name: WP Deletador
  * Plugin URI: https://example.com
  * Description: Apaga postagens após um período configurável, com opção de filtrar por categoria. Inclui painel para definir data/hora e visualizar impacto.
  * Version: 1.0.0
- * Author: Plugin WP
- * Author URI: https://example.com
- * License: GPL v2 or later
+ * Author: Theago Liddell
+ * Author URI: https://quartaseries.com
+ * License: GPL v2
  * Text Domain: apagar-postagens-tempo
  */
 
