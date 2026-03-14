@@ -1,0 +1,63 @@
+/* Apagar Postagens por Tempo - Estilos do painel admin */
+
+.apt-wrap {
+    max-width: 720px;
+    margin-top: 1em;
+}
+
+.apt-panel {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px 24px;
+    margin: 20px 0;
+}
+
+.apt-title {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dcdcde;
+    font-size: 1.1em;
+}
+
+.apt-wrap .form-table th {
+    padding: 15px 10px 15px 0;
+    width: 180px;
+}
+
+.apt-wrap .form-table td {
+    padding: 15px 10px;
+}
+
+.apt-wrap .form-table input[type="number"],
+.apt-wrap .form-table input[type="date"],
+.apt-wrap .form-table input[type="time"] {
+    padding: 4px 8px;
+}
+
+.apt-wrap .form-table select {
+    min-width: 200px;
+}
+
+.apt-wrap .submit {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #dcdcde;
+}
+
+.apt-wrap .submit .button-secondary {
+    margin-right: 8px;
+}
+
+.apt-info {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    padding: 12px 16px;
+    margin: 16px 0;
+}
+
+.apt-info p {
+    margin: 0;
+    color: #1d2327;
+}
